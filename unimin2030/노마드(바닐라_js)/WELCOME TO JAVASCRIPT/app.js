@@ -1,5 +1,7 @@
-const a = 5;
+const player = {
+    name: "jjw",
+    points: 123123,
+};
 
-console.log(a+2);
-console.log(a*2);
-console.log(a/2);
+console.log(player);
+console.log(player.name);
