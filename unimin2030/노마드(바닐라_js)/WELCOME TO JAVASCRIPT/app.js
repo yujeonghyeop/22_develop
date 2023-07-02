@@ -1,7 +1,10 @@
 const player = {
-    name: "jjw",
-    points: 123123,
+    name:"Jung",
+
+    sayhello: function (aname) {
+        console.log(aname);
+    }
 };
 
-console.log(player);
+player.sayhello("HHH");
 console.log(player.name);
