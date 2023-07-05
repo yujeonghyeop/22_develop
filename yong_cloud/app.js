@@ -1,10 +1,18 @@
-const player = {
-    name: "wyu",
-    points: 10,
-    fat: true,
+const calculator = {
+    plus: function (a,b){
+        return a + b;
+    },
+    minus: function (a,b){
+        return a - b;
+    },
+    times: function (a,b){
+        return a * b;
+    },
+    divide: function (a,b){
+        return a / b;
+    },
+    power: function (a,b){
+        return a ** b;
+    },
 };
-console.log(player);
-player.lastname = "potato";
-player.points = 20;
-console.log(player);
 
