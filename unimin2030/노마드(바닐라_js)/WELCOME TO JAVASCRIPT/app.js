@@ -1,3 +1,3 @@
-const age = prompt("How old are you?");
+const title = document.getElementById("title");
 
-console.log(age, parseInt(age));
+title.innerText = "Hi";
