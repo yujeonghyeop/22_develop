@@ -1,3 +1,4 @@
-const title = document.getElementById("title");
+const hellos = document.getElementsByClassName("Hello")
 
-title.innerText = "Hi";
+console.log(hellos);
+
