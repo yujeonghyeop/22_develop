@@ -1,10 +1,9 @@
-const player = {
-    name: "wyu",
-    points: 10,
-    fat: true,
-};
-console.log(player);
-player.lastname = "potato";
-player.points = 20;
-console.log(player);
+const age = parseInt(prompt("How old are you?"));
 
+if (isNaN(age)) {
+    console.log("Please write a number");
+} else if (age < 18) {
+    console.log("You are too young,");
+} else {
+    console.log ("You can drink");
+}
