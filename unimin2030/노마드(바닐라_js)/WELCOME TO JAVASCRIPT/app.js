@@ -1,7 +1,17 @@
-﻿const h1 = document.querySelector(".hello:first-child h1");
+﻿// const loginForm = document.getElementById("login-form");
+// const loginInput = loginForm.querySelector("input");
+// const loginButton = loginForm.querySelector("button");
+//아래와 같음
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-function handleTitleClick() {
-    h1.classList.toggle("clicked");
+function onloginBtnClick() {
+    const username = loginInput.value;
+    if (username === "") {
+        alert("Write your ID");
+    } else if (username.length > 15) {
+        alert("Your name is too long");
+    }
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginButton.addEventListener("click", onloginBtnClick);
