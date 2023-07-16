@@ -2,16 +2,12 @@
 // const loginInput = loginForm.querySelector("input");
 // const loginButton = loginForm.querySelector("button");
 //아래와 같음
+const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-const loginButton = document.querySelector("#login-form button");
 
-function onloginBtnClick() {
-    const username = loginInput.value;
-    if (username === "") {
-        alert("Write your ID");
-    } else if (username.length > 15) {
-        alert("Your name is too long");
-    }
+function onloginSubmit(event) {
+  event.preventDefault();
+  console.log(event);
 }
 
-loginButton.addEventListener("click", onloginBtnClick);
+loginForm.addEventListener("submit", onloginSubmit);
