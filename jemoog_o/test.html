@@ -8,9 +8,34 @@
     <link rel="stylesheet" href="test.css">
 </head>
 <body>
-    <script src="test.js"></script>
-    <p>
-        그냥 아무렇게 쓰는 내용들~
-    </p>
+    <h2 id="clock">00:00:00</h2>
+    <form class="hidden" id="login-form">
+        <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="what is your name?"
+        />
+        <input type="submit" value="Log In" />
+    </form>
+    <h1 class="hidden" id="greeting"></h1>
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To DO and Press Enter" required />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+        <span>kk</span>
+        <span>kk</span>
+    </div>
+    <div id="weather">
+        <span>weather</span>
+        <span>city</span>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
