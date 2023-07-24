@@ -19,11 +19,6 @@ function onloginSubmit(event) {
     paintGreeting(username);
 }
 
-function handleLinkClick(event) {
-    event.preventDefault();
-    console.log(event);
-}
-
 function paintGreeting(username) {
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
